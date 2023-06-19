@@ -1,0 +1,127 @@
+ 
+ .a{
+	font-size:25px;
+	 
+	font-weight: 600;
+	/* text-align: center; */
+	text-decoration-color:rgb(11, 12, 12);
+	
+	/* justify-content: center; */
+	} 
+ 
+	.empsocial{
+		margin-left: 300px;
+		margin-top: 80px;
+		color: #091351;
+		font-weight:600;
+		font-size: large;
+		padding-bottom: 0;
+		text-decoration-line: underline;
+		text-decoration-thickness: 3px;
+		text-decoration-color: rgb(233, 25, 133);
+	  }
+	  .col-md-3{
+		margin-left: 690px;
+	  }
+ /* USER LIST TABLE */
+ .user-list tbody td > img {
+    position: relative;
+	max-width: 70px;
+	float: left;
+	margin-right: 5px;
+	margin-left: 10px;
+
+
+}
+
+
+
+.user-list tbody td .user-link {
+
+	display: block;
+	font-size: 2.75em;
+	margin-right: auto;
+	margin-left: auto;
+
+
+	
+}
+
+/* TABLES */
+
+
+
+
+.table tbody >tr>td {
+    
+	margin-top: 0px;
+	font-size: 1.3em;
+
+	border-bottom: 2px solid #000000;
+
+	
+	padding: 10px 15px;
+	/* text-align:left; */
+	
+
+	
+}
+
+.table tbody tr td .call-type {
+	display: block;
+
+	font-size: 0.75em;
+	/* text-align: center; */
+	margin: 2px 15px;
+	margin-right: auto;
+
+}
+
+.table a.table-link {
+	margin: 2px 15px;
+	font-size: 1.125em;
+	
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container1 {
+
+height: 600px;
+width: 900px;
+margin-left: auto;
+ margin-right: auto;
+
+ overflow-x: hidden;
+
+ }
+
+/*  
+ /* width */
+.container1::-webkit-scrollbar {
+  width: 8px;
+  height: 4px;
+
+}
+
+/* Track */
+.container1::-webkit-scrollbar::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+.container1::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #000080; 
+	
+ }
+.container1::-webkit-scrollbar { 
+	height: 04,
+
+
+	 !important 
+	 }
+	 *{
+		font-family: 'Roboto', sans-serif;
+	}

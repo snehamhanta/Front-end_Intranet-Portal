@@ -1,0 +1,107 @@
+.input-box{
+    /* align-items: center; */
+    margin-left: 100px;
+    /* margin-top: 300px; */
+    align-items: center;
+
+}
+.login_bg{
+    height: 500px;
+    background-color: #3042b6;
+    margin-left: 450px;
+    margin-top: 49px;
+    margin-right: 150px;
+    display: inline-block;
+    position: relative;
+    width: 500px;
+}
+.login{
+    color: white;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    /* margin-bottom: 500px; */
+    /* align-items: center; */
+
+}
+.signin{
+    color: white;
+    margin-left: 152px;
+    /* margin-bottom: 10000px; */
+    margin-top:24px ;
+}
+.input-field1{
+    border: white 2px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 52px;
+    margin-left: 30px;
+}
+.input-field2{
+    border: white 2px;
+    color: white;
+    border-radius: 20px;
+     margin-top: 20px;
+    margin-left: 30px; 
+}
+.input-field3{
+    border: white 2px;
+border-radius: 20px;
+margin-top: 20px;
+margin-left: 127px;
+/* width: 100%; */
+}
+
+/* .login_photo{
+    background-color:white;
+    margin-right: 800px;
+margin-left: 120px;
+position: relative;
+margin-top: 32px;
+width: 602px;
+height: 498px;
+display: inline-block;
+/* justify-content: center; */
+/* margin-bottom: -135px; */
+/* padding: 0 20px 0 20px; */
+/* }  */
+/* .login_logo{
+    width: 100px;
+    height: 100px;
+    /* margin-top: 500px; */
+    /* display: inline; */
+/* }  */
+/* img{
+    width: 397px;
+    height: 326px;
+    margin-left: 88px;
+    margin-top: 77px;
+    /* margin-bottom: 100px; */
+    /* display: inline-block; */ 
+/* } */
+/* .text{
+    margin-left: 180px;
+    color:#3042b6 ;
+} */
+
+.login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #97a0ce;
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: -17px;
+  }
+  
+  .login-button:hover {
+    background-color: #bdc5de;
+  }
+  
+  .login-button:active {
+    background-color: #898de4;
+  }
+  

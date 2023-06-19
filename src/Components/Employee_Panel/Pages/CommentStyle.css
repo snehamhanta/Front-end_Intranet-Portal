@@ -1,0 +1,17 @@
+.textbox{
+    margin-left: 100px;
+    margin-top: 10px;
+    /* size: 20px; */
+
+}
+.emoji{
+    margin-top: 100px;
+}
+.emoji-button{
+    margin-top: 0px;
+    margin-left: 300px;
+
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,147 @@
+
+  
+
+  /* vaishnavi */
+  body{
+    margin: 0;
+    padding: 0;
+ }
+
+  .containers{
+    /* height: 600px; */
+    /* border: 2px solid red; */
+    display: grid;
+    /* margin-top: 40px; */
+    /* flex-wrap: wrap-reverse;
+    row-gap: 10px;
+    column-gap: 20px; */
+    /* justify-content: center; */
+    row-gap: 20px;
+    column-gap: 5px;
+    /* flex-flow: wrap row; */
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: flex-start; */
+    /* align-content: space-evenly; */
+    /* grid-template-areas: "hdr hdr hdr hdr"
+                        "sbr main main main"
+                        "sbr main main main"
+                        "ftr ftr ftr ftr"; */
+  
+    grid-template-columns: 100 200 300;
+  }
+  
+  .box{
+    background-color: #fff;
+    /* border: 2px solid red; */
+    padding: 12px;
+
+  }
+  div.box {
+    /* width: 500px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* text-align: center; */
+    border-radius: 10px;
+  }
+  
+  #box1{
+    width: 550px;
+    height: 360px;
+    grid-row: 1/2;  
+    border-radius: 10px; 
+    
+  }
+
+
+
+  
+  #box2{
+    width: 500px;
+    height: 130px;
+    /* align-self: center; */
+    /* align-content: center; */
+    /* justify-content: center; */
+    grid-column: 1/2;   
+    /* padding-left: 40px; */
+    margin-left: 23px;
+  }
+  /* vertical category box */
+  #box3{
+    width: 305px;
+    margin-left: 20px;
+    grid-row: 1 / span 3;
+    height: 510px;
+    overflow: auto;
+    /* margin-bottom: 20px; */
+    /* justify-content: space-around; */
+  }
+  
+    /* #box4{
+      grid-column: 1/ -1;
+      grid-row: 1 / 3;
+      grid-area: 2 / 2 / 3 / 4;
+  } */
+  
+  
+  .card-img-top{
+    width: 90%;
+    height: 30px;
+    padding: 20px;
+  }
+  
+  .card{
+    border-radius: 0;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  
+  .d-flex{
+    padding: 10px;
+  }
+  
+  #rows{
+    margin-bottom: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+    margin: 10px;  
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    border-radius: 10px;
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: darkblue; 
+    border-radius: 10px;
+    padding: 10px;
+    background-clip: padding-box;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: blue; 
+  }
+
+  div#containerss {
+    /* height: 200px; */
+    /* width: 300px; */
+    overflow: auto;
+    border-radius: 5px;
+    /* margin: 10px; */
+    /* border: 1px solid #AAAAAA; */
+  }
+  
+  div#content {
+    /* height: 1000px; */
+    outline: none;
+    /* padding: 10px; */
+  }
+  
