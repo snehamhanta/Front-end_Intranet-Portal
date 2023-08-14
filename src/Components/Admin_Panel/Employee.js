@@ -99,9 +99,9 @@ export default function Employee(props) {
 
     return (
         <>
-            <div className="container text-center">
-                <p className="lead">An Employee</p>
-            </div>
+            {/* <div className="container text-center"> */}
+                <p className="lead">Employee Register</p>
+            {/* </div> */}
             <form autoComplete="off" noValidate onSubmit={handleFormSubmit}>
                 <div className="card">
                     <img src={values.imageSrc} className="card-img-top" />

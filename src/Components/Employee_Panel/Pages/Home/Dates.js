@@ -1,31 +1,10 @@
-// import React from "react";
-// import "./DateStyle.css";
-// import moment from 'moment';
-// import Grid from "@mui/material/Grid";
-// import TodayRoundedIcon from '@mui/icons-material/TodayRounded';
-// function Date() {
-//   return (
-//     <div>
-//          <div className="Date">
-//                <Grid container>
-//                <Grid item className="grid-item2"><TodayRoundedIcon sx={{ fontSize: 50 }}/></Grid>
-//                </Grid>
-//                <h3 className="h3">{moment().format('dddd')}</h3>
-//                <p className="p2">{moment().format('MMMM Do YYYY, h:mm:ss a')}</p>
-//          </div>
-//     </div>
-//   )
-// }
-
-// export default Date
-
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./DateStyle.css";
 import moment from 'moment';
 import Grid from "@mui/material/Grid";
 // import TodayRoundedIcon from '@mui/icons-material/TodayRounded';
 import { WiDaySunnyOvercast } from "react-icons/wi";
-import ShowModalMotivation from "./ModalComponents/ShowModalMotivation"
+// import ShowModalMotivation from "./ModalComponents/ShowModalMotivation"
 import Motivation from "./Motivation";
 function Dates() {
 let curDate = new Date();
@@ -40,22 +19,47 @@ if (curDate < 12) {
    } else {
      greeting='good evening';
    }
+
+// code for showing motivation
+  const [userData, setUserdata]= useState([]);
+  // const [filterdata, setFilterdata]= useState([]);
+
+useEffect( ()=>{
+      const getUserdata= async()=>{
+        const reqData= await fetch("https://localhost:7274/api/Employee");
+        const resData= await reqData.json();
+        //console.log(resData);
+        setUserdata(resData);
+        // setFilterdata(resData);
+  
+      } 
+  getUserdata();
+    },[]);
+
+
 return (
        
     <div>
          <div className="Date">
-               <Grid container>
-               <Grid item className="grid-item2" ><WiDaySunnyOvercast style={{ fontSize: "50px",marginTop:"-20px" }}/></Grid>
-               <h3 className="h3" style={{fontSize:"15px",marginTop:"-25px"}}><span style={{textTransform:"uppercase"}}>{greeting}</span>
+               <Grid container className="mb-0">
+               <Grid item className="grid-item2 mb-0" ><WiDaySunnyOvercast style={{ fontSize: "80px",marginTop:"-10px" }}/></Grid>
+               <h3 className="h3" style={{fontSize:"15px",marginTop:"-15px"}}><span style={{textTransform:"uppercase"}}>{greeting}</span>
                <h3 className="h4" style={{fontSize:"17px"}}>{moment().format('dddd')} <br/>{moment().format('D-MM-YYYY')}</h3>
                </h3>
-               {/* <ShowModalMotivation/> */}
-               <div style={{marginTop:"-20px"}}>
-               {/* <Motivation/> */}
-               {/* <ShowModalMotivation/> */}
-               </div>
-               {/* <p className="h3">{moment().format('D-MM-YYYY')}</p> */}
+            
                </Grid>
+               <div className="mt-0" style={{ color:"white" ,marginLeft:"15px", marginRight:"15px"}}><Motivation/>
+</div>
+               {/* {
+                  userData.map( (getUser)=>(
+                 
+                 <div key={getUser.employeesID}>
+                    <div className="mt-0" style={{ color:"white" ,marginLeft:"15px", marginRight:"15px"}}>{getUser.employeeName}</div>
+                </div>
+
+                 )
+                )
+                  } */}
          </div>
     </div>
     

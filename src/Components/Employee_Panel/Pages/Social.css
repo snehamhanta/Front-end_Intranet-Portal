@@ -1,6 +1,4 @@
 
-  
-
   /* vaishnavi */
   body{
     margin: 0;
@@ -45,11 +43,12 @@
   }
   
   #box1{
-    width: 550px;
+    width: 625px;
     height: 360px;
     grid-row: 1/2;  
     border-radius: 10px; 
-    
+    margin-left: 65px;
+    margin-top: 20px;
   }
 
 
@@ -63,17 +62,19 @@
     /* justify-content: center; */
     grid-column: 1/2;   
     /* padding-left: 40px; */
-    margin-left: 23px;
+    margin-left: 130px;
+    margin-top: 20px;
   }
   /* vertical category box */
   #box3{
-    width: 305px;
-    margin-left: 20px;
+    width: 405px;
+    margin-left: 50px;
     grid-row: 1 / span 3;
     height: 510px;
     overflow: auto;
     /* margin-bottom: 20px; */
     /* justify-content: space-around; */
+    margin-top: 20px;
   }
   
     /* #box4{
@@ -144,4 +145,3 @@
     outline: none;
     /* padding: 10px; */
   }
-  

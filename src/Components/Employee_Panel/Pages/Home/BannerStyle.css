@@ -1,4 +1,4 @@
-.banner1{
+/* .banner1{
     position: relative;
     margin-left: 200px;
     margin-top: 30px;
@@ -23,6 +23,41 @@
       margin-left: 80px;
       contain: content;
       z-index: -1;
+    }
+    .imageSlider{
+      position: relative;
+      display: flex;
+    }
+  } */
+
+
+
+
+  .banner1{
+    position: relative;
+    /* margin-left: 200px; */
+    /* margin-top: 30px; */
+    /* background-color: rgb(220, 237, 252); */
+    border-radius: 3px;
+    /* color: rgb(59, 58, 58); */
+    /* height: 400px; */
+    /* width: 750px; */
+    text-align:center;
+  }
+  .imageSlider{
+    height: 400px;
+    width: 750px;
+  }
+  @media screen and (max-width: 404px){
+    .banner1{
+      /* position: relative; */
+      align-items:center;
+      display: flex;
+      height: 340px;
+      width:340px;
+      /* margin-left: 80px; */
+      contain: content;
+      /* z-index: -1; */
     }
     .imageSlider{
       position: relative;

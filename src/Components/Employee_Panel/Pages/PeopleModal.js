@@ -27,12 +27,14 @@ export default class PeopleModal extends Component {
                           <div className="text-center"><img  src={this.props.avatar_url} width="200" height='200' alt="" className="img-fluid rounded"/></div>
                           {/* <h5>{this.props.  }</h5> */}
                           </div>
-                          <div className="ml-5 mr-3 mt-0 mb-0 text-primary">
-                                <p className="text-primary text-capitalize ">Name : {this.props.login}</p>
-                                <p className="text-primary">Email : {this.props.url}</p>
-                                <p className="text-primary ">Type : {this.props.type}</p>
-                                <p className="text-primary ">Birthdate : {this.props.type}</p>
-                                <p className="text-primary ">Type : {this.props.type}</p>
+                          <div style={{marginBottom:"50px"}}>
+                          <div className="empshow mr-3 mt-0 mb-0 text-primary">
+                                <p className="text-primary text-capitalize ">Name : {this.props.employeeName}</p>
+                                <p className="text-primary">Department : {this.props.department}</p>
+                                <p className="text-primary ">Designation : {this.props.designation}</p>
+                                <p className="text-primary ">Birthdate : {this.props.dob}</p>
+                                <p className="text-primary ">Mobile Number : {this.props.mobile}</p>
+                          </div>
                           </div>
             </div>
           </div>

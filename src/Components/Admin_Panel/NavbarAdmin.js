@@ -198,7 +198,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
 import SearchBar from './SearchBar';
 
-function Navbar() {
+function NavbarAdmin() {
   
    let user= JSON.parse(localStorage.getItem('user-info'))
    console.warn(user) 
@@ -222,42 +222,57 @@ function Navbar() {
        <div className="nav-container">
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                      <li className="nav-item">
-                        <NavLink to="/Home" style={{textDecoration:" none"}} activeClassName="active" className="nav-links" onClick={handleClick}>
+                        <NavLink to="/" style={{textDecoration:" none"}} activeClassName="active" className="nav-links" onClick={handleClick}>
                          HOME
                         </NavLink>
                      </li>
 
                      <li className="nav-item">
-                        <NavLink to="/News" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
+                        <NavLink to="/Designation" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
                          News
                         </NavLink>
                      </li>
 
                      <li className="nav-item">
-                        <NavLink to="/Social" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
+                        <NavLink to="/Department" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
                          SOCIAL
                         </NavLink>
                      </li>
                      <li className="nav-item">
-                        <NavLink to="/People" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
+                        <NavLink to="/Motivation" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
                          PEOPLE
                         </NavLink>
                      </li>
 
                      <li className="nav-item">
-                        <NavLink to="/Stories" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
+                        <NavLink to="/AdminNews" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
                          STORIES
                         </NavLink>
                      </li>
                      <li className="nav-item">
-                        <NavLink to="/YStories" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
+                        <NavLink to="/Images" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
                          YoutubeVideos
                         </NavLink>
                      </li>
 
                      <li className="nav-item">
-                        <NavLink to="/Documents" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
+                        <NavLink to="/AdminStories" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
+                         AdminStories
+                        </NavLink>
+                     </li>
+                     <li className="nav-item">
+                        <NavLink to="/AdminYStories" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
+                         AdminYStories
+                        </NavLink>
+                     </li>
+                     <li className="nav-item">
+                        <NavLink to="/Document" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
                          DOCUMENT
+                        </NavLink>
+                     </li>
+                     <li className="nav-item">
+                        <NavLink to="/Calender" style={{textDecoration:" none"}}  activeClassName="active"  className="nav-links" onClick={handleClick}>
+                         Calender
                         </NavLink>
                      </li>
                      
@@ -285,4 +300,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default NavbarAdmin

@@ -37,6 +37,7 @@ ul.list{
     bottom: 0;
     top: 0;
     background-color: rgba(189, 189, 189, 0.9);
+    z-index: 99;
 }
 
 .modal-container{
@@ -48,6 +49,7 @@ ul.list{
     background-color: #fff;
     padding: 2rem 3rem;
     border: 0.5rem;
+    z-index: 99;
 
 }   
  .Modal-btn{

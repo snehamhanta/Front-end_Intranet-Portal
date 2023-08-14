@@ -5,12 +5,11 @@ import "./EmailStyle.css";
 function Email() {
   return (
     <>
-    <p className="text-email">Birthday</p>
-         <div className="Email">
-              <Link to="/email">
-              <input type="button" value="View All" className="email-btn"/>
-              </Link>
-         </div>
+     <div>
+      {/* <h4></h4> */}
+    <h5 className="text-emp-directory" > <span className=" " style={{padding:".5px",borderBottom:"4px solid rgb(233, 25, 133)"}}>Email</span></h5>
+         <div className="EmpDirectory shadow"></div>
+   </div>
 
     </>
   )

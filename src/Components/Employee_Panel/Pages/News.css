@@ -1,6 +1,10 @@
 .newsbox{
-    margin-left: 170px;
+    margin-left: 80px;
     width:350px ;
     height:150px;
     margin-top: 50px;
+}
+*{
+    font-family:'poppins';
+
 }

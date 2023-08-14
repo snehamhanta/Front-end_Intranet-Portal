@@ -22,6 +22,7 @@ const News = () => {
 
   return (
     <>
+  
     <Navbar />
     <Sidebar />
      
@@ -44,21 +45,21 @@ const News = () => {
       </div>
     </Container> */}
 
-    <Container>
+    <Container className='mt-0'>
       {/* <h2 className="text-center mt-5">Company News</h2> */}
-      <h1 className='Launch mt-5 h4 text-dark' style={{marginLeft:"200px", fontWeight:"600"}} ><span style={{padding:"1px",borderBottom:"5px solid red", marginTop:"0px"}} >Company News</span></h1>
+      <h1 className='Launch mt-3 h4 text-dark' style={{marginLeft:"108px", fontWeight:"600" , marginTop:"0px"}} ><span style={{padding:"1px",borderBottom:"5px solid red", marginTop:"0px"}} >Company News</span></h1>
      <div  className='newsbox'>
         {news.map(item => (
           <Col md={4} key={item.newsId} >
-            <Card className="mb-4 border-top-0 shadow" style={{ width: '60rem' }} >
+            <Card className="mb-4 border-top-0 shadow" style={{ width: '60rem', width:"1090px"}} >
               <Row >
                 <Col md={4}  >
-                  <Card.Img style={{ width: '100%', height: '200px', objectFit: 'cover' }} src={item.imageUrl} alt={item.newsTitale} />
+                  <Card.Img style={{ width: '300px', height: '200px', objectFit: 'cover' ,padding:"25px"}} src={item.imageUrl} alt={item.newsTitale} />
                 </Col>
                 <Col md={8} >
                   <Card.Body width='350px' height='150px'>
-                    <Card.Title>{item.newsTitale}</Card.Title>
-                    <Card.Text>{item.content}</Card.Text>
+                    <Card.Title style={{marginLeft:"-10px",fontSize:"20px",marginTop:"10px",marginRight:"100px"}}>{item.newsTitale}</Card.Title>
+                    <Card.Text style={{marginLeft:"-10px",fontSize:"15px",marginRight:"70px",maxWidth:"900p",textIndent:"0%"}}>{item.content}</Card.Text>
                   </Card.Body>
                 </Col>
               </Row>

@@ -87,13 +87,15 @@ import Designation from "./Components/Admin_Panel/Desihnation";
 import AdminStories from './Components/Admin_Panel/Stories';
 import Motivation from './Components/Admin_Panel/Motivation';
 import Calender from './Components/Admin_Panel/Calender';
+import AdminYStories from './Components/Admin_Panel/YStories'; 
 // import MainPage from "./MainPage";
 
-import Home from './Components/Employee_Panel/Pages/Home/Home';
+import Home from './Components/Employee_Panel/Pages/Home';
 import News from './Components/Employee_Panel/Pages/News';
 import Social from './Components/Employee_Panel/Pages/Social';
 import People from './Components/Employee_Panel/Pages/People';
 import Stories from './Components/Employee_Panel/Pages/Stories';
+import YStories from './Components/Employee_Panel/Pages/YStories';
 import Documents from './Components/Employee_Panel/Pages/Documents';
 import Profile from './Components/Employee_Panel/Pages/Profile';
 import Login from './Components/Login';
@@ -116,8 +118,12 @@ function App() {
             <Route path='/Images' element={<ImageList />} />
             <Route path='/Document' element={<DocumentList />} />
             <Route path='/AdminStories' element={<AdminStories/>}/>
+            <Route path='/AdminYStories' element={<AdminYStories/>}/>
+
             <Route path='/Motivation' element={<Motivation/>}/>
             <Route path='/Calender' element={<Calender/>}/>
+            {/* <Route path='/YStories' element={<YStories />} /> */}
+
 
 
             
@@ -139,6 +145,7 @@ function App() {
                    <Route path='/Social' element={<Social />} />
                    <Route path='/People' element={<People />} />
                    <Route path='/Stories' element={<Stories />} />
+                   <Route path='/YStories' element={<YStories />} />  
                    <Route path='/Documents' element={<Documents />} />
                    <Route path='/Profile' element={<Profile />} /> 
 

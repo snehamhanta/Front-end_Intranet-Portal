@@ -4,7 +4,7 @@ import './sidebar.scss';
 
 const sidebarNavItems = [
     {
-        display: 'Dashboard',
+        display: 'Employee',
         icon: <i className='bx bx-home'></i>,
         to: '/',
         section: ''
@@ -45,6 +45,12 @@ const sidebarNavItems = [
         to: '/AdminStories',
         section: 'AdminStories'
     },
+    {
+        display: 'AdminYStories',
+        icon: <i className='bx bx-user'></i>,
+        to: '/AdminYStories',
+        section: 'AdminYStories'
+    },  
     
     {
         display: 'Document',
@@ -58,6 +64,7 @@ const sidebarNavItems = [
         to: '/Calender',
         section: 'Calender'
     },
+
 ]
 
 const Sidebar = () => {

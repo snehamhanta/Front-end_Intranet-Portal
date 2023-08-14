@@ -1,0 +1,39 @@
+.pollshomehead{
+    margin-top: 15px;
+    /* margin-left: 55%; */
+    color: #091351;
+    font-weight:600 ;
+    font-size: large;
+    /* text-decoration-line: underline; */
+    /* text-decoration-thickness: 3px; */
+    /* text-decoration-color: rgb(233, 25, 133); */
+    text-align: left;
+  }
+  
+  .pollshome{
+    /* margin-left: 200px; */
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 400px;
+    /* width: 33%; */
+    text-align:center;
+    /* contain: content; */
+    padding: 20px;
+  }
+
+  .Pol h5{
+    font-size: 18px;
+    margin-left: 0px;
+    color: blue;
+    float: left;
+    text-align: left;
+    margin-bottom: 0px;
+  }
+
+  .line {
+    display: inline-flex;
+    width: 100%;
+    border-top: solid blue;
+    margin-top: 0px;
+  }

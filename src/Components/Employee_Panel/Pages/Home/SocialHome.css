@@ -1,0 +1,96 @@
+.socialHomehead{
+    /* margin-top: 5px; */
+    /* margin-left: 55%; */
+    color: #091351;
+    font-weight:600 ;
+    font-size: large;
+    /* text-decoration-line: underline; */
+    /* text-decoration-thickness: 3px; */
+    /* text-decoration-color: rgb(233, 25, 133); */
+    text-align: left;
+  }
+  
+  .SocialHome{
+    margin-left: 0px;
+    margin-top: 20px;
+    background-color: #b5aee3;
+    border-radius: 5px;
+    height: 300px;
+    /* width: 50%; */
+    text-align:center;
+    /* contain: content; */
+  }
+
+  .SocialHome2{
+    margin-left: 0px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 80px;
+    padding: 15px;
+    padding-left: 30px;
+    text-align: justify;
+    /* width: 50%; */
+    /* text-align:justify; */
+    /* contain: content; */
+  }
+
+
+  .socialh{
+    text-transform: capitalize;
+  }
+
+  .socialp p{
+    text-indent: 0px;
+    font-size: 16px;
+  }
+
+  /* btn */
+  
+.viewmore-btn-social {
+  align-items: center;
+  background-color: #6b71b2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 200px;
+  min-height: 30px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  /* margin-left: 200px; */
+  float: right;
+}
+
+  .viewmore-btn-social:hover,
+.viewmore-btn-sories:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+  .viewmore-btn-social:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+  .viewmore-btn-social:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}

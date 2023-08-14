@@ -76,10 +76,10 @@ export default function DocumentList() {
     return (
         <div className="row">
             <div className="col-md-12">
-                <div className="jumbotron jumbotron-fluid py-4">
-                    <div className="container text-center">
-                        <h1 className="display-4">Document </h1>
-                    </div>
+                <div className="jumbotron jumbotron-fluid py-4"style={{marginRight:"50px"}}>
+                    {/* <div className="container text-center"> */}
+                    <h1 style={{marginLeft:"400px"}}>Documents Model</h1>
+                    {/* </div> */}
                 </div>
             </div>
             <div className="col-md-4">

@@ -7,7 +7,7 @@
 }
 .login_bg{
     height: 500px;
-    background-color: #3042b6;
+    background-color: #303a99;
     margin-left: 450px;
     margin-top: 49px;
     margin-right: 150px;
@@ -87,21 +87,21 @@ display: inline-block;
 .login-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #97a0ce;
+    background-color: #303a99;
     color: #fff;
     border: none;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 25px;
     cursor: pointer;
-    margin-left: -17px;
+    margin-left: 40px;
   }
   
-  .login-button:hover {
+  /* .login-button:hover {
     background-color: #bdc5de;
   }
   
   .login-button:active {
     background-color: #898de4;
-  }
+  } */
   

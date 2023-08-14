@@ -1,22 +1,3 @@
-// import React from 'react'
-// import { NavLink } from 'react-router-dom'
-// import "./VisionStyle.css";
-
-// const Vision = () => {
-//     return (
-//         <div>
-//             <NavLink to="/vision">
-//                 <div className="vision">
-//                    <h3 className="h3-vision">Our Vision</h3>
-//                 </div>
-//              </NavLink>
-//         </div>
-//       )
-// }
-
-// export default Vision
-
-
 import React,{useState} from 'react'
 // import { NavLink } from 'react-router-dom'
 import "./VisionStyle.css";
@@ -30,19 +11,22 @@ const Vision = () => {
     const closeModal =() => setShowModal(false);
 
     return (
-        <div className='vision' >
-                <div className='logo'>
-                    <GiEyeShield  style={{textAlign:"center", background:"rgb(230, 26, 145)", color:"#fff", width:"80px", height:"58px" }}/>
+        <div>
+        <div className='vision' onClick={()=> setShowModal(true)} >
+                   {/* <button onClick={()=> setShowModal(true)} > */}
+                <div className='Vision-logo' onClick={()=> setShowModal(true)} >
+                    <GiEyeShield style={{fontSize:"40px"}} />
                 </div>
-            <button className='btn' onClick={()=> setShowModal(true)} style={{textDecoration:"none"}}>
-                <div className='visions'>
-                <h3 className='h3-vision' style={{textDecoration:"none"}}>
-                        Our Vision</h3>
+                <div onClick={()=> setShowModal(true)}>
+                        <h5 className='vision-h3'>Our Vision</h5>
                 </div>
-             </button>
-             {showModal && <MyModal closeModal ={closeModal}/>} 
+                    {/* </button>  */}
+        </div>
+        {showModal && <MyModal closeModal ={closeModal}/>} 
+
         </div>
       )
 }
+
 
 export default Vision

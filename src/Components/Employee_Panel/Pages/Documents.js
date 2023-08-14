@@ -1,222 +1,3 @@
-// // import React, { useState, useEffect } from "react";
-// // import axios from "axios";
-// // import { Container, Row, Col, Card } from "react-bootstrap";
-// // import Navbar from '../Navbar'
-// // import Sidebar from '../Sidebar'
-// // import defaultDocImage from '../Images/images (1).png';
-
-// // const Documents = () => {
-
-// //   const [documents, setDocuments] = useState([]);
-
-// //   useEffect(() => {
-// //     axios.get("https://localhost:7274/api/Document").then((response) => {
-// //       setDocuments(response.data);
-// //     });
-// //   }, []);
-
-// //   return (
-// //     <>
-// //     <Navbar />
-// //     <Sidebar />
-
-
-
-// //     <Container>
-// //     <h2 className="text-center mt-3">Document</h2>
-// //       <Row>
-// //         {documents.map((document) => (
-// //           <Col sm={2} key={document.docID}>
-// //             <Card className="mb-4 border-top-0 shadow" >
-// //             <Card.Img variant="top" style={{ width: '100%', height: '200px', objectFit: 'cover' }} src={defaultDocImage} />
-// //               <Card.Body>
-// //                 <Card.Title>{document.docName}</Card.Title>
-// //                 <a href={document.docSrc} target="_blank" rel="noreferrer">
-// //                   View Document
-// //                 </a>
-// //               </Card.Body>
-// //             </Card>
-// //           </Col>
-// //         ))}
-// //       </Row>
-// //     </Container>
-
-
-// //     </>
-// //   )
-// // }
-
-// // export default Documents
-
-// import React, { useState, useEffect } from "react";
-// import axios from "axios";
-// import { Container, Row, Col, Card } from "react-bootstrap";
-// import Navbar from '../Navbar'
-// import Sidebar from '../Sidebar'
-
-
-// import "./DocumentsStyle.css";
-
-// const Documents = () => {
-
-//   const [documents, setDocuments] = useState([]);
-//   const [recordForEdit, setRecordForEdit] = useState(null);
-  
-
-
-//   useEffect(() => {
-//     axios.get("https://localhost:7274/api/Document").then((response) => {
-//       setDocuments(response.data);
-//     });
-//   }, []);
-
-//   const showRecordDetails = data => {
-//     setRecordForEdit(data)
-// }
-//   const downloadFileAtURL=(url)=>{
-//     fetch(url).then(response=>response.blob()).then(blob=>{
-//       const blobURL= window.URL.createObjectURL(new Blob([blob]))
-//       const fileName=url.split('/').pop();
-//       const aTag=document.createElement('a');
-//        aTag.href=blobURL;
-//       aTag.setAttribute('download',fileName)
-//       document.body.appendChild(aTag);
-//       aTag.saveAs(blob, 'filename');
-//       aTag.click();
-//      aTag.remove();
-//     });
-
-// };
-
-
-
-
- 
- 
-  
-//    const imageCard = data => (
-//       <div className="col-md-8">
-//       <div className='col-sm-6 offset-sm-3'>
-        
-//       <table  className="tbl1"class="text-center " > 
-
-//                                          <tbody >
-//                                          <tr>
-//                                           <td >
-                                         
-   
-//                                               <img src="/img/images (1).png" alt=" "></img>
-                
-//                                          </td>
-                                        
-//                                           <td  class="text-center" >
-//                                               <div  class="table" onClick={() => { showRecordDetails(data) }}>
-//                                               </div>
-//                                          </td>
-                                              
-//                                          <td class="text-center">
-//                                               <span><a> {data.docName}</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
-//                                               &emsp;&emsp;</td>
-//                                               <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
-                                              
-//                                               <td class="text-center">
-                                  
-//                                   <a href={data.docSrc} target="_blank" class="table-link"><i>Open</i></a>
-//                                  </td>
-//                                  {/*<td>
-                                          
-//                                         <a href={data.docSrc}class="table-link" onClick={e => downloadFileAtURL(e, parseInt(data.docID))}>
-//                                       <i >  Download</i>
-//                                          </a>
-//    </td>*/}
-
-//                                         </tr>
-     
-//                                   </tbody></table>
-                               
-                          
-//             </div>
-//             </div>
-
- 
-                                
-                          
-//   )
-           
-
-//   return (
-//     <>
-//     <Navbar />
-//     <Sidebar />
-
-
-
-   
-
-  
-//       {/** <b>Search the Document:
-// 		<input id="gfg" type="text" placeholder="Search here"></input>
-// 		</b>
-// 		<br/>
-// 		<br></br>*/}
-		 	
-//        <Container>
-
-// <Row>
-// <div class="cont" align="center" >
-//     <div className="App" > 
-    
-//     <div class="container1"align="center">
-//     <div class="row">
-//       <div class="col-lg-12">
-//         <div class="main-box clearfix">
-//           <div class="table-responsive">
-//           <div class="container1">
-            
-           
-//             <table class="table user-list "align="center"  >
-            
-                            
-//                            {documents.map((e, i) =>(
-//                                 <tr key={i}>
-//                                     {imageCard(documents[i])} 
-                                  
-                               
-                
-//                                </tr>
-//                             ))
-                           
-//                         }
-                   
-//                 </table>
-              
-             
-              
-//           </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//     </div>
-//     </div>
-
-//     </div>
-
-       
-//       </Row>
-//     </Container>
-
-
-//     </>
-//   )
-// }
-
-// export default Documents
-
-
-
-
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Container, Row, Col, Card } from "react-bootstrap";
@@ -274,18 +55,28 @@ useEffect( ()=>{
   } 
 getUserdata();
 },[]);
+// const handlesearch=(event)=>{
+//   const getSearch= event.target.value; 
+//   if(getSearch.length > 0)
+//   {     
+//    const searchdata= documents.filter( (item)=> item.docName.toLowerCase().includes(getSearch));
+//    setDocuments(searchdata);
+//   } else {
+//     setDocuments(filterdata);
+//   }
+//   setQuery(getSearch);
+// }
 const handlesearch=(event)=>{
   const getSearch= event.target.value; 
   if(getSearch.length > 0)
   {     
-   const searchdata= documents.filter( (item)=> item.docName.toLowerCase().includes(getSearch));
+   const searchdata= documents.filter( (item)=> item.docName.toUpperCase().includes(getSearch)||item.docName.toLowerCase().includes(getSearch)) ;
    setDocuments(searchdata);
   } else {
     setDocuments(filterdata);
   }
   setQuery(getSearch);
 }
-
  
   
    const imageCard = data => (
@@ -300,7 +91,7 @@ const handlesearch=(event)=>{
                                           <td >
                                          
    
-                                              <img src="http://localhost:3000/im.png" alt=" "></img>
+                                              <img src="http://localhost:3000/img1 (1).png" alt=" "></img>
                 
                                          </td>
                                         
@@ -344,38 +135,34 @@ const handlesearch=(event)=>{
     <>
     <Navbar />
     <Sidebar />
-
-
-
    
+	{/* <h2 className="empsocial" >Documents </h2> 	 */}
+  <h1 className='Launch mt-4 h4 text-dark' style={{marginLeft:"190px", fontWeight:"600" , marginTop:"100px"}} ><span style={{padding:"1px",borderBottom:"5px solid red", marginTop:"0px"}} >Document</span></h1>
 
-  
-      
-	<h2 className="empsocial" >Documents </h2> 	
-       <Container style={{width:"950px", align:"center" }}>
+       <Container style={{width:"1200px", align:"center" ,marginLeft:"240px"}}>
 
 <Row>
 
 
-    <div className="App" > 
+    <div className="App"> 
     <div className='row text-left' >
         <div > 
             <div className='heading'>
                  
                         
                 <div className=''> 
-                <div className='search' style={{padding:"1px 32px 0 0",margin:"-30px"}}>
+                <div className='search' style={{padding:"1px 32px 0 0",margin:"-30px",marginLeft:"70px"}}>
                 
 
-                <input className="col-md-3 " type="text" name='name'  style={{border:"0.1px solid #030a5eb7" ,fontSize:"20px", fontWeight:"600" ,color:"#030a5eb7",marginLeft:"700px",marginTop:"-126px"}} value={query}   onChange={(e)=>handlesearch(e)} placeholder='Search Document' align='right' /> 
+                <input className="col-md-3 " type="text" name='name'  style={{border:"0.1px solid #030a5eb7" ,fontSize:"20px", fontWeight:"600" ,color:"#030a5eb7",marginLeft:"660px",marginTop:"-140px"}} value={query}   onChange={(e)=>handlesearch(e)} placeholder='Search Document' align='right' /> 
            </div>  <br></br>        
                   </div>                
             </div>
 
           </div>
-    <div class="container1"align="center"style={{width:"950px"}} >   
+    <div class="container1"align="center"style={{width:"1100px",marginTop:"-30px"}} >   
    
-    <div   class="table-responsive" style={{width:"950px", align:"center", padding:"0 32px 0 0" }}>
+    <div   class="table-responsive" style={{width:"1100px", align:"center", padding:"0 32px 0 0" }}>
    
          
        

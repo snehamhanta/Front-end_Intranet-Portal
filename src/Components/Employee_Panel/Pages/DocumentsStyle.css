@@ -10,7 +10,7 @@
 	} 
  
 	.empsocial{
-		margin-left: 300px;
+		margin-left: 230px;
 		margin-top: 80px;
 		color: #091351;
 		font-weight:600;
@@ -89,8 +89,8 @@
 .container1 {
 
 height: 600px;
-width: 900px;
-margin-left: auto;
+width: 1200px;
+margin-left: -60px;
  margin-right: auto;
 
  overflow-x: hidden;
@@ -123,5 +123,5 @@ margin-left: auto;
 	 !important 
 	 }
 	 *{
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Poppins', sans-serif;
 	}

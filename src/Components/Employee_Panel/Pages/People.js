@@ -287,7 +287,7 @@
 //import React from 'react'
 import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
-// import "./People.css";
+import "./People.css";
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
@@ -353,8 +353,8 @@ function People() {
   const [model, setModel] = useState(false);
   const [tempdata, setTempdata] = useState([]);
 
-  const getData = (avatar_url, login, url, type) => {
-    let tempData = [avatar_url, login, url, type];
+  const getData = (avatar_url, employeeName, department, designation,dob,mobile) => {
+    let tempData = [avatar_url, employeeName, department, designation,dob,mobile];
     setTempdata((item) => [1, ...tempData]);
 
     return setModel(true);
@@ -370,12 +370,12 @@ function People() {
       {/* <div className="container"/> */}
       {/* <div className="row row-cols-1 row-cols-md-3 g-2 py-5" style={{width:"85%"}}> */}
                   
-      <div className="container mt-0 mb-0 d-flex justify-content-center pl-5">
-             <div className="row row-cols-md-3 " style={{width:"85%"}}>                        
-                         <div className="heading"><h4 className="text-dark"><span style={{padding:"1px",borderBottom:"5px solid red"}}>Employee Directory</span></h4></div>
-                         <div className="col-md-4">
-                         <div className="search">
-                           <i className="fa fa-search"/>
+      <div className="container mt-2 mb-0 d-flex justify-content-center pl-5" >
+             <div className="row row-cols-md-3 " style={{width:"92%"}}>                        
+             <h1 className='Launch mt-0 h4 text-dark' style={{marginLeft:"0px", fontWeight:"600"}} ><span style={{padding:"1px",borderBottom:"5px solid red", marginTop:"0px"}} >Employee Directory</span></h1>
+                         <div className="col-md-4" style={{marginLeft:"350px",marginTop:"0px"}}>
+                         <div className="search"  style={{marginTop:"-30px",marginLeft:"60px",width:"300px",height:"70px"}}>
+                           <i className="fa fa-search" style={{marginLeft:"60px",marginTop:"-10px"}}/>
                            <input type="text " className="form-control" placeholder="Search Employee"
                            value={query}
                            onChange={(e) => handlesearch(e)}
@@ -387,10 +387,10 @@ function People() {
      
 
       
-       <div className="container mt-0 d-flex justify-content-center pl-5">
+       <div className="container mt-0 d-flex justify-content-center pl-5" >
              
 
-        <div className="row row-cols-1 row-cols-md-3 g-2 py-5" style={{width:"85%"}}>
+        <div className="row row-cols-1 row-cols-md-3 g-2 py-5" style={{width:"88%",marginTop:"-50px",marginLeft:"-55px"}}>
               
 
         {userData.map((getUser, index) => (
@@ -400,8 +400,8 @@ function People() {
                             <div className="d-flex">
                               <img src={getUser.imageSrc} className="rounded" width="80" alt="..."/>
                                 <div className="cardbody ml-4">
-                                    <h6 className="cardtitle"> {getUser.login}</h6>
-                                    <h6 className="cardtext" style={{fontSize:"10px"}}><BsFillEnvelopeFill style={{float:"left", paddingRight:"2px", fontSize:"14px"}}/>{getUser.url}</h6>
+                                    <h6 className="cardtitle"> {getUser.employeeName}</h6>
+                                    <h6 className="cardtext" style={{fontSize:"10px"}}><BsFillEnvelopeFill style={{float:"left", paddingRight:"2px", fontSize:"14px"}}/>{getUser.department}</h6>
                                 </div>
                             </div>
                         
@@ -412,24 +412,28 @@ function People() {
                                  onClick={() =>
                                   getData(
                                     getUser.imageSrc,
-                                    getUser.login,
-                                    getUser.url,
-                                    getUser.type
+                                    getUser.employeeName,
+                                    getUser.department,
+                                    getUser.designation,
+                                    getUser.dob,
+                                    getUser.mobile
                                   )
                                 }>
                                   <div className="contents">
                                               <h5 className="">Designation: {getUser.designation}</h5>
                                               <h5 className="">Department: {getUser.department}</h5>
-                                              <h5 className="">Branch: {getUser.type}</h5>
+                                              <h5 className="">Designation: {getUser.designation}</h5>
                                   </div>
                                 </div>
                                 <div className="justify-content-center">
                                     <button className="btnn" onClick={() =>
                                       getData(
                                         getUser.imageSrc,
-                                        getUser.login,
-                                        getUser.url,
-                                        getUser.type
+                                        getUser.employeeName,
+                                        getUser.department,
+                                        getUser.designation,
+                                        getUser.dob,
+                                        getUser.mobile
                                         )
                                       }>View More</button>
                                 </div>
@@ -442,9 +446,11 @@ function People() {
           {model === true ? (
         <PeopleModal
           avatar_url={tempdata[1]}
-          login={tempdata[2]}
-          url={tempdata[3]}
-          type={tempdata[4]}
+          employeeName={tempdata[2]}
+          department={tempdata[3]}
+          designation={tempdata[4]}
+          dob={tempdata[5]}
+          mobile={tempdata[6]}
           hide={() => setModel(false)}
         />
       ) : (

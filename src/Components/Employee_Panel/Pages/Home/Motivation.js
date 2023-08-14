@@ -1,5 +1,5 @@
 import React from 'react'
-import "./MotivationStyle.css";
+// import "./MotivationStyle.css";
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Slider from 'react-slick';
@@ -23,7 +23,7 @@ function Motivation() {
   return (
     <div>
     {/* <p className="text-documentsHome">Motivations</p> */}
-         <div className="Motivation">
+         <div className="Motivation" style={{marginTop:"-110px"}}>
          {/* <div class="scroll-container"> */}
          
   {/* <Slider dots={true}> */}
@@ -39,8 +39,8 @@ function Motivation() {
   </div>
   <button className='btn' onClick={()=> setShowModal(true)} style={{textDecoration:"none"}}>
                 <div className=''>
-                <h3 className='h3-values' style={{textDecoration:"none"}}>
-                        Core Values</h3>
+                {/* <h3 className='h3-values' style={{textDecoration:"none"}}>
+                        Core Values</h3> */}
                 </div>
              </button>
              {showModal && <MyModal closeModal ={closeModal}/>} 

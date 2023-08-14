@@ -1,0 +1,160 @@
+
+
+  
+  .con{
+    /* background-color: #2c2525; */
+    margin: auto;
+    position: relative;
+    width: 75%;
+  } 
+  
+  /* for banner and dates */
+  .flex-container {
+    
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    justify-content:center;
+    /* margin-left:30px; */
+  
+  }
+  
+  .flex-item-left {
+    background-color: #fff;
+    /* padding: 10px; */
+    flex: 70%;
+    margin:10px;
+  }
+  
+  .flex-item-right {
+    /* background-color: dodgerblue; */
+    /* padding: 10px; */
+    flex: 30%;
+    margin:10px;
+  }
+  
+  /* for new starters and company */
+  .flex-container2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    /* justify-content:space-around; */
+    /* margin:10px; */
+  }
+  
+  .flex-item-left2 {
+    /* background-color: #f1f1f1; */
+    /* padding: 10px; */
+    flex: 50%;
+    margin:10px;
+  }
+  
+  .flex-item-right2 {
+    /* background-color: dodgerblue; */
+    /* padding: 10px; */
+    flex: 50%;
+    margin:10px;
+  }
+  
+  .flex-container3 {
+    
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+    justify-content:center;
+    /* margin-left:30px; */
+    
+  }
+  
+  .flex-item-left3 {
+    /* background-color: #f1f1f1; */
+    /* padding: 10px; */
+    flex: 50%;
+    margin:10px;
+  }
+  .flex-item-center3 {
+    /* background-color: #f1f1f1; */
+    /* padding: 10px; */
+    flex: 50%;
+    margin:10px;
+  }
+  
+  .flex-item-right3 {
+    /* background-color: #f1f1f1; */
+    /* padding: 10px; */
+    flex: 50%;
+    margin:10px;
+  }
+  
+  .flex-container4 {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    justify-content:space-around;
+    /* margin:10px; */
+  }
+  
+  .flex-item-left4 {
+    /* background-color: #f1f1f1; */
+    /* padding: 10px; */
+    flex: 50%;
+    margin:10px;
+  }
+  
+  .flex-item-Right4 {
+    /* background-color: dodgerblue; */
+    /* padding: 10px; */
+    flex: 50%;
+    /* margin-left: 0%; */
+    margin:10px;
+  }
+  
+  
+  .flex-container5 {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    justify-content:space-around;
+    /* margin:10px; */
+  }
+  
+  .flex-item-left5 {
+    /* background-color: #f1f1f1; */
+    /* padding: 10px; */
+    flex: 50%;
+    margin:10px;
+  }
+  
+  .flex-item-center5 {
+    /* background-color: #f1f1f1; */
+    /* padding: 10px; */
+    flex: 50%;
+    margin:10px;
+  }
+  
+  .flex-item-right5 {
+    /* background-color: dodgerblue; */
+    /* padding: 10px; */
+    flex: 50%;
+    /* margin-left: 0%; */
+    margin:10px;
+  }
+  
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 404px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    .flex-container2 {
+      flex-direction: column;
+    }
+    .flex-container3 {
+      flex-direction: column;
+    }
+  }

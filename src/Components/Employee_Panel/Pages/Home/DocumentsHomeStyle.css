@@ -1,58 +1,156 @@
-.text-documentsHome{
-    margin-left: 220px;
+documentsHome{
+    margin-left: 155px;
     margin-top: 50px;
     color: #091351;
-    font-weight:600;
+    font-weight:700;
     font-size: large;
     padding-bottom: 0;
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
     text-decoration-color: rgb(233, 25, 133);
 }
-.Documents{
+.a{
+  color:black;
+}
+/* .Documents{
     height: 400px;
     width: 330px;
-    background-color: #091351;
+    background-color: rgb(153, 221, 227);
     margin-left: 200px;
     margin-top: 50px;
     margin-bottom: 40px;
-}
-.motivation-p{
-    /* margin-left: 100px; */
-    font-size: small;
-    display: inline-block;
-    padding: 10px;
-    color: white;
-}
-.scroll-container {
-    overflow: auto;
-    /* Set a fixed height or width to limit the size of the scrollable area */
-    /* height: 320px; Adjust the height as needed */
-    height: 400px;
-}
-.scroll-container::-webkit-scrollbar {
-    width: 10px;
-    /* height: 200px; */
-}
-
-.scroll-container::-webkit-scrollbar-track {
-    background: #ffffff;
-    
-
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-    background:rgb(233, 25, 133);
-    /* height: 200px; */
-}
-
-.scroll-container::-webkit-scrollbar-thumb:hover {
-    background: rgb(233, 25, 133);
-    /* height: 200px; */
-}
-
-
+    overflow-y: auto;
+    overflow-x: auto;
+} */
 @media screen and (max-width: 960px){
+   
+} 
+
+.motivation-p{
+    margin-top: 100px; 
+    font-size: medium;
+    text-align: center;
+    /* display: inline-block;
+    text-align: center;
+    padding: 50px; */
+    color: white;
+    
+}
+/* .Doc{
+  height: 400px;
+  width: 330px;
+  background-color: rgb(216, 142, 142);
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+} */
+
+/* .user-list tbody td > img {
+    position: relative;
+	max-width: 2px;
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+    max-width: 100%;
+    max-height: 80%;
+    margin-bottom: 20px;
+
+
+} */
+
+
+
+/* .user-list tbody td .user-link {
+
+	display: block;
+	font-size: 3.75em;
+	margin-right: auto;
+	margin-left: auto;
+
+
+	
+}
+
+/* TABLES */
+
+
+
+/* 
+.table tbody >tr>td {
+    
+	margin-top: 0px;
+	font-size: 1.3em;
+
+	border-bottom: 3px solid #000000;
+
+	
+	padding: 15px 20px;
+	/* text-align:left; */
+	
+
+	
+/* } */ */
+
+/* .table tbody tr td .call-type {
+	display: block;
+
+	font-size: 0.75em;
+	/* text-align: center; */
+	/* margin: 2px 15px;
+	margin-right: auto; */
+
+/* } */ */
+
+/* .table a.table-link {
+	margin: 2px 15px;
+	font-size: 1.125em;
+	
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+
+/* .container1 {
+
+height: 600px;
+width: 100px;
+margin-left: auto;
+ margin-right: auto;
+
+ overflow-x: hidden;
+
+ } */
+
+/*  
+ /* width */
+/* .Documents::-webkit-scrollbar {
+  width: 8px;
+  height: 4px;
+
+} */
+
+/* Track */
+/* .Documents::-webkit-scrollbar::-webkit-scrollbar-track {
+  background: white; 
+} */
+ 
+/* Handle */
+/* .Documents::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #000080; 
+	
+ }
+.Documents::-webkit-scrollbar { 
+	height: 04,
+
+
+	 !important 
+	 } */ */
+
+
+/* @media screen and (max-width: 960px){
     .text-documentsHome{
         margin-left: 240px;
         margin-top: 30px;
@@ -72,4 +170,149 @@
         margin-top: 20px;
     }
    
+}  */
+
+
+
+.user-list tbody td > img {
+    position: relative;
+	
+	float: left;
+	margin-right: 0px;
+	margin-left: 0px;
+  /* margin-bottom: 5px; */
+
+
+
 }
+
+
+
+.user-list tbody td .user-link {
+
+	display: block;
+	font-size: 1em;
+	margin-right: auto;
+	margin-left: auto;
+
+
+ 
+
+
+
+	
+}
+
+/* TABLES */
+
+
+/* .table{
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  padding: 5px;
+} */
+
+/* .td{
+ 
+} */
+.table tbody >tr>td {
+    
+	margin-top: 0px;
+  margin-left: 0px;
+  
+  /* padding: 5px; */
+   
+  background-color:rgb(252, 252, 252);
+	font-size: 0.50em;
+/* 
+	border-bottom: 2px solid #000000; */
+
+  
+	/* padding: 0px 0px; */
+	/* text-align:left; */
+	
+
+	
+}
+
+.table tbody tr td .call-type {
+	display: block;
+
+	font-size: 0.50em;
+	/* text-align: center; */
+	/* margin: 1px 1px; */
+	/* margin-right: auto; */
+  
+
+}
+
+
+.table a.table-link {
+	/* margin: 0px 0px; */
+	font-size: 0.55em;
+	
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .container1 {
+
+height: 400px;
+width: 330px;
+margin-left: auto;
+ margin-right: auto;
+
+ overflow-x: hidden;
+  rgba(255, 254, 255, 0.993);
+
+ } */
+ .Documents{
+    height: 400px;
+    width: 350px;
+    background-color:white;
+
+    /* margin-left: 200px; */
+    margin-top: 28px;
+    margin-bottom: 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px;
+}
+.doc-btn{
+  position: relative;
+  height: 30px;
+  width: 125px;
+  top:0%;
+  left: 20%;
+  background-color:#6b71b2;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+/*  
+ /* width */
+.Documents::-webkit-scrollbar {
+  width: 8px;
+  height: 4px;
+
+}
+
+/* Track */
+.Documents::-webkit-scrollbar::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+.Documents::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #000080; 
+	
+ }
+.Documents::-webkit-scrollbar { 
+	height: 04,
+
+
+	 !important 
+	 }
